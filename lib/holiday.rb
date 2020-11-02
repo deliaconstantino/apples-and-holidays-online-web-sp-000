@@ -51,8 +51,9 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   #iterate with each through holiday_supplies hash
-    # puts season name (key) & then iterate w/ each through each holiday hash w/ season
-      
+    # puts season name: (key) & then iterate w/ each through each season hash
+      #puts holiday name : 
+
 
 end
 
