@@ -35,7 +35,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # code here
   # remember to return the updated hash
   holiday_hash[season] = {:holiday_name => supply_array}
-  
+
   # a[:"0"][:NY] = {:count => 11}
 
   # binding.pry
