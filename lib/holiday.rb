@@ -55,7 +55,9 @@ def all_supplies_in_holidays(holiday_hash)
       #puts holiday name : then supplies_array to string adding a comma between each element
 
   holiday_hash.each do |season, specific_holiday_hash |
-    puts "#{season}:"
+    puts "#{season.to_s}:"
+    season.each do 
+    end
   end
 
 
