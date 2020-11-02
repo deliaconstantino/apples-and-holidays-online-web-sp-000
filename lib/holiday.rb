@@ -62,14 +62,15 @@ def all_supplies_in_holidays(holiday_hash)
       puts "  #{name_as_array.join(" ")}: #{supplies_array.join(", ")}"
     end
   end
-
-
 end
 
 def all_holidays_with_bbq(holiday_hash)
   holiday_names = []
   holiday_hash.each do |season, holidays|
     holidays.each do |holiday_name, supply_array|
+      if supply_array.include?("BBQ")
+        holiday_names << holiday_name
+      end
+    end
   end
-
 end
