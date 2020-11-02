@@ -36,7 +36,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
   holiday_hash[:season] = :#{holiday_name}
 
-  # binding.pry
+  binding.pry
   holiday_hash
 
 end
