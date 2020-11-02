@@ -49,7 +49,10 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  
+
+  #iterate with each through holiday_supplies hash
+    # puts season name (key) & then iterate w/ each through each holiday hash w/ season
+      
 
 end
 
