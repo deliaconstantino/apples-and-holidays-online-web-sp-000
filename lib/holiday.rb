@@ -52,7 +52,11 @@ def all_supplies_in_holidays(holiday_hash)
 
   #iterate with each through holiday_supplies hash
     # puts season name: (key) & then iterate w/ each through each season hash
-      #puts holiday name : 
+      #puts holiday name : then supplies_array to string adding a comma between each element
+
+  holiday_hash.each do |season, specific_holiday_hash |
+    puts "#{season}:"
+  end
 
 
 end
