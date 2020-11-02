@@ -54,10 +54,10 @@ def all_supplies_in_holidays(holiday_hash)
     # puts season name: (key) & then iterate w/ each through each season hash
       #puts holiday name : then supplies_array to string adding a comma between each element
 
-  holiday_hash.each do |season, specific_holiday_hash |
-    puts "#{season.to_s.capitalize}:"
+  holiday_hash.each do |key, specific_holiday_hash |
+    puts "#{key.to_s.capitalize}:"
     binding.pry
-    season.each do |holiday_name, supplies_array|
+    key.each do |holiday_name, supplies_array|
       puts "#{holiday_name.to_s.capitalize}: #{supplies_array.join(", ")}"
 
     end
