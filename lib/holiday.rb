@@ -64,25 +64,15 @@ def all_supplies_in_holidays(holiday_hash)
   end
 end
 
+
 def all_holidays_with_bbq(holiday_hash)
-  holidays_w_bbq = []
-  holiday_hash.each do |season, holiday_info_hash|
-    if holiday_info_hash.values.flatten.include?("BBQ")
-    holidays_w_bbq << holiday_info_hash.keys
+  holidays_with_bbq = []
+  holiday_hash.each do |season, holidays|
+    holidays.each do |holiday_name, supply_array|
+      if supply_array.include?("BBQ")
+        holidays_with_bbq << holiday_name
+      end
     end
   end
-  holidays_w_bbq.join(", ")
-
+  holidays_with_bbq
 end
-
-# def all_holidays_with_bbq(holiday_hash)
-#   holidays_with_bbq = []
-#   holiday_hash.each do |season, holidays|
-#     holidays.each do |holiday_name, supply_array|
-#       if supply_array.include?("BBQ")
-#         holidays_with_bbq << holiday_name
-#       end
-#     end
-#   end
-#   holidays_with_bbq
-# end
